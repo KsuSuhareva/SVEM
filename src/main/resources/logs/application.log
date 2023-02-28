@@ -1,0 +1,1022 @@
+2023-02-28 13:37:07.927  INFO 7772 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 7772 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:37:07.977  INFO 7772 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:37:11.333  INFO 7772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:37:11.357  INFO 7772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:37:11.360  INFO 7772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:37:11.661  INFO 7772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:37:11.662  INFO 7772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3490 ms
+2023-02-28 13:37:11.797  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:37:12.331  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:37:12.366  INFO 7772 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:37:13.368  INFO 7772 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:37:13.971  INFO 7772 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:37:14.038  INFO 7772 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:37:14.070  WARN 7772 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:37:14.072  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:37:14.242  INFO 7772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:37:14.250  INFO 7772 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:37:14.283  INFO 7772 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:37:14.383 ERROR 7772 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:38:47.511  INFO 8256 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 8256 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:38:47.520  INFO 8256 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:38:50.671  INFO 8256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:38:50.694  INFO 8256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:38:50.696  INFO 8256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:38:51.000  INFO 8256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:38:51.001  INFO 8256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3301 ms
+2023-02-28 13:38:51.077  INFO 8256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:38:51.523  INFO 8256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:38:51.557  INFO 8256 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:38:52.187  INFO 8256 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:38:52.613  INFO 8256 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:38:52.642  INFO 8256 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:38:52.665  WARN 8256 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:38:52.667  INFO 8256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:38:52.891  INFO 8256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:38:52.899  INFO 8256 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:38:52.938  INFO 8256 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:38:53.023 ERROR 8256 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:39:34.013  INFO 6036 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 6036 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:39:34.022  INFO 6036 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:39:37.139  INFO 6036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:39:37.166  INFO 6036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:39:37.167  INFO 6036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:39:37.477  INFO 6036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:39:37.478  INFO 6036 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3270 ms
+2023-02-28 13:39:37.561  INFO 6036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:39:37.957  INFO 6036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:39:37.994  INFO 6036 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:39:38.559  INFO 6036 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:39:38.996  INFO 6036 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:39:39.025  INFO 6036 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:39:39.046  WARN 6036 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:39:39.049  INFO 6036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:39:39.481  INFO 6036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:39:39.499  INFO 6036 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:39:39.539  INFO 6036 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:39:39.590 ERROR 6036 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:40:45.881  INFO 8468 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 8468 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:40:45.889  INFO 8468 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:40:50.145  INFO 8468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:40:50.171  INFO 8468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:40:50.172  INFO 8468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:40:50.503  INFO 8468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:40:50.505  INFO 8468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4441 ms
+2023-02-28 13:40:50.661  INFO 8468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:40:51.020  INFO 8468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:40:51.056  INFO 8468 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:40:51.678  INFO 8468 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:40:52.193  INFO 8468 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:40:52.221  INFO 8468 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:40:52.249  WARN 8468 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:40:52.251  INFO 8468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:40:52.372  INFO 8468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:40:52.380  INFO 8468 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:40:52.414  INFO 8468 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:40:52.468 ERROR 8468 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:44:13.721  INFO 5896 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 5896 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:44:13.733  INFO 5896 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:44:17.488  INFO 5896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:44:17.512  INFO 5896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:44:17.514  INFO 5896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:44:17.782  INFO 5896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:44:17.783  INFO 5896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3733 ms
+2023-02-28 13:44:17.861  INFO 5896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:44:18.241  INFO 5896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:44:18.274  INFO 5896 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:44:18.931  INFO 5896 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:44:19.344  INFO 5896 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:44:19.371  INFO 5896 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:44:19.394  WARN 5896 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:44:19.396  INFO 5896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:44:19.752  INFO 5896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:44:19.760  INFO 5896 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:44:19.794  INFO 5896 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:44:19.857 ERROR 5896 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:46:42.465  INFO 8060 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 8060 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:46:42.474  INFO 8060 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:46:45.785  INFO 8060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:46:45.813  INFO 8060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:46:45.815  INFO 8060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:46:46.118  INFO 8060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:46:46.119  INFO 8060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3439 ms
+2023-02-28 13:46:46.211  INFO 8060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:46:46.633  INFO 8060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:46:46.669  INFO 8060 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:46:47.235  INFO 8060 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:46:47.713  INFO 8060 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:46:47.743  INFO 8060 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:46:47.767  WARN 8060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:46:47.771  INFO 8060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:46:48.015  INFO 8060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:46:48.023  INFO 8060 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:46:48.053  INFO 8060 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:46:48.136 ERROR 8060 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:47:16.684  INFO 8560 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 8560 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:47:16.694  INFO 8560 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:47:19.990  INFO 8560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:47:20.013  INFO 8560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:47:20.014  INFO 8560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:47:20.300  INFO 8560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:47:20.301  INFO 8560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3353 ms
+2023-02-28 13:47:20.388  INFO 8560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:47:20.764  INFO 8560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:47:20.800  INFO 8560 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:47:21.359  INFO 8560 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:47:21.842  INFO 8560 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:47:22.099  INFO 8560 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:47:22.124  WARN 8560 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+2023-02-28 13:47:22.129  INFO 8560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:47:22.241  INFO 8560 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:47:22.248  INFO 8560 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:47:22.280  INFO 8560 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:47:22.365 ERROR 8560 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at by.suhareva.svem.SvemApplication.main(SvemApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:369) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:224) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:180) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:158) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.9.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 60 common frames omitted
+Caused by: liquibase.exception.SetupException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:371) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:318) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:83) ~[liquibase-core-4.9.1.jar:na]
+	... 73 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:99) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:587) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:363) ~[liquibase-core-4.9.1.jar:na]
+	... 75 common frames omitted
+
+2023-02-28 13:49:48.737  INFO 12276 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 12276 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:49:48.747  INFO 12276 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:49:52.126  INFO 12276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:49:52.176  INFO 12276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:49:52.178  INFO 12276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:49:52.470  INFO 12276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:49:52.470  INFO 12276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3575 ms
+2023-02-28 13:49:52.564  INFO 12276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:49:52.942  INFO 12276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:49:52.979  INFO 12276 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:49:53.589  INFO 12276 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:49:54.183  INFO 12276 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:49:54.297  INFO 12276 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:49:54.320  WARN 12276 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+2023-02-28 13:49:54.322  INFO 12276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:49:54.477  INFO 12276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:49:54.492  INFO 12276 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:49:54.528  INFO 12276 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:49:54.616 ERROR 12276 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at by.suhareva.svem.SvemApplication.main(SvemApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:369) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:224) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:180) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:158) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.9.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 60 common frames omitted
+Caused by: liquibase.exception.SetupException: The file /changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:371) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:318) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:83) ~[liquibase-core-4.9.1.jar:na]
+	... 73 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file /changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:99) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:587) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:363) ~[liquibase-core-4.9.1.jar:na]
+	... 75 common frames omitted
+
+2023-02-28 13:50:27.303  INFO 4936 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 4936 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:50:27.314  INFO 4936 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:50:30.412  INFO 4936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:50:30.434  INFO 4936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:50:30.436  INFO 4936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:50:30.699  INFO 4936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:50:30.700  INFO 4936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3226 ms
+2023-02-28 13:50:30.777  INFO 4936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:50:31.178  INFO 4936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:50:31.212  INFO 4936 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:50:31.804  INFO 4936 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:50:32.260  INFO 4936 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:50:32.357  INFO 4936 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:50:32.378  WARN 4936 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+2023-02-28 13:50:32.381  INFO 4936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:50:32.517  INFO 4936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:50:32.533  INFO 4936 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:50:32.566  INFO 4936 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:50:32.637 ERROR 4936 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at by.suhareva.svem.SvemApplication.main(SvemApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:369) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:224) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:180) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:158) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.9.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 60 common frames omitted
+Caused by: liquibase.exception.SetupException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:371) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:318) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:83) ~[liquibase-core-4.9.1.jar:na]
+	... 73 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:99) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:587) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:363) ~[liquibase-core-4.9.1.jar:na]
+	... 75 common frames omitted
+
+2023-02-28 13:51:32.195  INFO 12532 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 12532 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:51:32.205  INFO 12532 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:51:35.755  INFO 12532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:51:35.777  INFO 12532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:51:35.779  INFO 12532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:51:36.083  INFO 12532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:51:36.084  INFO 12532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3700 ms
+2023-02-28 13:51:36.161  INFO 12532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:51:36.599  INFO 12532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:51:36.633  INFO 12532 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:51:37.195  INFO 12532 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:51:37.851  INFO 12532 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:51:38.013  INFO 12532 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:51:38.039  WARN 12532 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+2023-02-28 13:51:38.043  INFO 12532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:51:38.187  INFO 12532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:51:38.203  INFO 12532 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:51:38.250  INFO 12532 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:51:38.362 ERROR 12532 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at by.suhareva.svem.SvemApplication.main(SvemApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/changelog/db.changelog-master.yaml
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:369) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:224) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:180) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:158) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.9.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 60 common frames omitted
+Caused by: liquibase.exception.SetupException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:371) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:318) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:83) ~[liquibase-core-4.9.1.jar:na]
+	... 73 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:99) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:587) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:363) ~[liquibase-core-4.9.1.jar:na]
+	... 75 common frames omitted
+
+2023-02-28 13:53:29.926  INFO 8328 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 8328 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:53:29.956  INFO 8328 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:53:34.387  INFO 8328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:53:34.412  INFO 8328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:53:34.414  INFO 8328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:53:34.911  INFO 8328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:53:34.912  INFO 8328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4750 ms
+2023-02-28 13:53:35.003  INFO 8328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:53:35.484  INFO 8328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:53:35.527  INFO 8328 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:53:36.406  INFO 8328 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:53:36.910  INFO 8328 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:53:37.010  INFO 8328 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:53:37.031  WARN 8328 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+2023-02-28 13:53:37.034  INFO 8328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:53:37.360  INFO 8328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:53:37.372  INFO 8328 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:53:37.438  INFO 8328 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:53:37.528 ERROR 8328 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at by.suhareva.svem.SvemApplication.main(SvemApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:369) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:224) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:180) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:158) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.9.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 60 common frames omitted
+Caused by: liquibase.exception.SetupException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:371) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:318) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:83) ~[liquibase-core-4.9.1.jar:na]
+	... 73 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:99) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:587) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:363) ~[liquibase-core-4.9.1.jar:na]
+	... 75 common frames omitted
+
+2023-02-28 13:53:54.290  INFO 6272 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 6272 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:53:54.299  INFO 6272 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:53:57.840  INFO 6272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:53:57.863  INFO 6272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:53:57.864  INFO 6272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:53:58.197  INFO 6272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:53:58.198  INFO 6272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3742 ms
+2023-02-28 13:53:58.287  INFO 6272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:53:58.723  INFO 6272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:53:58.758  INFO 6272 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:53:59.364  INFO 6272 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:53:59.924  INFO 6272 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:54:00.028  INFO 6272 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:54:00.052  WARN 6272 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+2023-02-28 13:54:00.054  INFO 6272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:54:00.178  INFO 6272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:54:00.186  INFO 6272 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:54:00.221  INFO 6272 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:54:00.296 ERROR 6272 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.9.jar:2.7.9]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.9.jar:2.7.9]
+	at by.suhareva.svem.SvemApplication.main(SvemApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 47 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:changelog/db.changelog-master.yaml
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:369) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:224) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:180) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:179) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Scope.child(Scope.java:158) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:197) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269) ~[liquibase-core-4.9.1.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.25.jar:5.3.25]
+	... 60 common frames omitted
+Caused by: liquibase.exception.SetupException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:371) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:318) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:83) ~[liquibase-core-4.9.1.jar:na]
+	... 73 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: The file changelog/changeset/xmlSchema.xml was not found in
+    - Spring resources
+Specifying files by absolute path was removed in Liquibase 4.0. Please use a relative path or add '/' to the classpath parameter.
+	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:99) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:587) ~[liquibase-core-4.9.1.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:363) ~[liquibase-core-4.9.1.jar:na]
+	... 75 common frames omitted
+
+2023-02-28 13:54:35.768  INFO 1680 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 1680 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:54:35.777  INFO 1680 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:54:38.986  INFO 1680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:54:39.013  INFO 1680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:54:39.015  INFO 1680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:54:39.376  INFO 1680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:54:39.377  INFO 1680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3454 ms
+2023-02-28 13:54:39.456  INFO 1680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:54:39.832  INFO 1680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:54:39.869  INFO 1680 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:54:40.468  INFO 1680 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:54:40.904  INFO 1680 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:54:40.933  INFO 1680 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:54:40.955  WARN 1680 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:54:40.959  INFO 1680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:54:41.084  INFO 1680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:54:41.093  INFO 1680 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:54:41.128  INFO 1680 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:54:41.194 ERROR 1680 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
+2023-02-28 13:55:14.378  INFO 12984 --- [main] by.suhareva.svem.SvemApplication         : Starting SvemApplication using Java 11 on DESKTOP-FN0SUJ3 with PID 12984 (D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes started by vadim in D:\КУРСЫ ПО-58\Intervale\Проект\SVEM)
+2023-02-28 13:55:14.389  INFO 12984 --- [main] by.suhareva.svem.SvemApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-02-28 13:55:17.402  INFO 12984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-02-28 13:55:17.430  INFO 12984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28 13:55:17.432  INFO 12984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-28 13:55:17.764  INFO 12984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28 13:55:17.765  INFO 12984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3186 ms
+2023-02-28 13:55:17.864  INFO 12984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28 13:55:18.310  INFO 12984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28 13:55:18.354  INFO 12984 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2023-02-28 13:55:19.103  INFO 12984 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-02-28 13:55:19.605  INFO 12984 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28 13:55:19.638  INFO 12984 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28 13:55:19.662  WARN 12984 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestController' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\controllers\RequestController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestServiceImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\service\requestServiceImpl\RequestServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestRepositoryJdbcImpl' defined in file [D:\КУРСЫ ПО-58\Intervale\Проект\SVEM\target\classes\by\suhareva\svem\repositories\requestImpl\RequestRepositoryJdbcImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: classpath:/db/changelog/db.changelog-master.yaml does not exist
+2023-02-28 13:55:19.664  INFO 12984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28 13:55:19.800  INFO 12984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28 13:55:19.808  INFO 12984 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-28 13:55:19.844  INFO 12984 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-28 13:55:19.916 ERROR 12984 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Liquibase failed to start because no changelog could be found at 'classpath:/db/changelog/db.changelog-master.yaml'.
+
+Action:
+
+Make sure a Liquibase changelog is present at the configured path.
+
