@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+
+    <changeSet id="Create table Fines" author="suhareva">
+        <createTable tableName="fines">
+            <column  name="id"  type="uuid"  defaultValueComputed="random_uuid()">
+                <constraints unique="true"   nullable="false"/>
+            </column>
+            <column name="type" type="character varying"></column>
+            <column name="number" type="character varying(20)" defaultValueComputed="random_uuid()"></column>
+            <column name="resolution_num" type="integer"></column>
+            <column name="resolution_date" type="timestamp"></column>
+            <column name="accrued" type="DECIMAL"></column>
+            <column name="paid" type="DECIMAL"></column>
+        </createTable>
+    </changeSet>
+    
+    <changeSet id="Create table Requests" author="suhareva">
+        <createTable tableName="requests">
+            <column name="uuid" type="uuid" ></column>
+            <column name="number" type="character varying(20)"></column>
+            <column name="type" type="character varying"></column>
+            <column name="date" type="timestamp"></column>
+            <column name="status" type="character varying"></column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="Create table Response" author="suhareva">
+        <createTable tableName="responses">
+            <column name="uuid" type="uuid"></column>
+            <column name="uuid_request" type="uuid"></column>
+            <column name="id_fine" type="uuid"></column>
+            <column name="number" type="character varying(20)"></column>
+            <column name="resolution_num" type="integer"></column>
+            <column name="resolution_date" type="timestamp"></column>
+            <column name="accrued" type="DECIMAL"></column>
+            <column name="paid" type="DECIMAL"></column>
+            <column name="date" type="timestamp"></column>
+            <column name="status" type="character varying"></column>
+        </createTable>
+    </changeSet>
+
+
+
+
+
+
+
+
+
+
+</databaseChangeLog>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="insert fine_INDIVIDUAL to fines_table" author="suhareva">
+        <insert tableName="fines">
+            <column name="type" value="INDIVIDUAL"></column>
+            <column name="number" value="12AB123456"/>
+            <column name="resolution_num" value="12345678"/>
+            <column name="resolution_date" value="2022-12-17"/>
+            <column name="accrued" value="1200"/>
+            <column name="paid" value="1200"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert fine_LEGAL_ENTITY to fines_table" author="suhareva">
+        <insert tableName="fines">
+            <column name="type" value="LEGAL_ENTITY"></column>
+            <column name="number" value="1234567890"/>
+            <column name="resolution_num" value="12345678"/>
+            <column name="resolution_date" value="2022-12-17"/>
+            <column name="accrued" value="1200"/>
+            <column name="paid" value="1200"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
