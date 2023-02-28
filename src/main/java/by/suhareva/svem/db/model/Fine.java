@@ -1,5 +1,6 @@
 package by.suhareva.svem.db.model;
 
+import by.suhareva.svem.enums.ClientType;
 import lombok.*;
 import org.springframework.validation.annotation.Validated;
 
@@ -20,6 +21,7 @@ public class Fine {
     @NotEmpty
     @Pattern(regexp = "[0-9]{2}[A-z,0-9]{2}[0-9]{6}|[0-9]{9}")
     private String number;
+    private ClientType type;
     private int resolution_num;
     private Date resolution_date;
     private BigDecimal accrued;

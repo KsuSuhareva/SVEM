@@ -11,6 +11,7 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.Optional;
@@ -19,7 +20,7 @@ import java.util.UUID;
 import static by.suhareva.svem.enums.StatusInBase.NEW;
 
 @Slf4j
-@Component
+@Service
 @RequiredArgsConstructor
 @Getter
 public class Worker implements Runnable {
@@ -37,7 +38,7 @@ public class Worker implements Runnable {
                 Optional<GetRequest> optionalRequest = requestRepository.getByMinDate();
                 if (optionalRequest.isPresent()) {
                     GetRequest request = optionalRequest.get();
-                    Optional<Fine> fine = fineRepository.getByNumber(request.getNumber());
+                    Optional<Fine> fine = fineRepository.getByNumber(request);
 
                     SendResponse response = getResponse(optionalRequest, fine);
                     responseRepository.save(response);
@@ -69,6 +70,7 @@ public class Worker implements Runnable {
                 .uuid_request(request.getUuid())
                 .id_fine(fine.getId())
                 .number(fine.getNumber())
+                .type(fine.getType())
                 .resolution_num(fine.getResolution_num())
                 .resolution_date(fine.getResolution_date())
                 .accrued(fine.getAccrued())

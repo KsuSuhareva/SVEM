@@ -27,7 +27,7 @@ public class ResponseRepositoryJdbcImpl implements ResponseRepository {
     public SendResponse save(SendResponse response) throws DAOException {
         try {
             if (jdbcTemplate.update(SQLRequest.INSERT_INTO_RESPONSE, response.getUuid(), response.getUuid_request(),
-                    response.getId_fine(), response.getNumber(), response.getResolution_num(),
+                    response.getId_fine(), response.getNumber(), response.getType().toString(),response.getResolution_num(),
                     response.getResolution_date(), response.getAccrued(), response.getPaid(),
                     response.getDate(), response.getStatus().toString()) == 0)
                 throw new DAOException("Not save response in table responses");

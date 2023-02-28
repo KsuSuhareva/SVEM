@@ -23,7 +23,9 @@
     
     <changeSet id="Create table Requests" author="suhareva">
         <createTable tableName="requests">
-            <column name="uuid" type="uuid" ></column>
+            <column name="uuid" type="uuid" >
+                <constraints unique="true"   nullable="false"/>
+            </column>
             <column name="number" type="character varying(20)"></column>
             <column name="type" type="character varying"></column>
             <column name="date" type="timestamp"></column>
@@ -33,10 +35,13 @@
 
     <changeSet id="Create table Response" author="suhareva">
         <createTable tableName="responses">
-            <column name="uuid" type="uuid"></column>
+            <column name="uuid" type="uuid">
+                <constraints unique="true"   nullable="false"/>
+            </column>
             <column name="uuid_request" type="uuid"></column>
             <column name="id_fine" type="uuid"></column>
             <column name="number" type="character varying(20)"></column>
+            <column name="type" type="character varying"></column>
             <column name="resolution_num" type="integer"></column>
             <column name="resolution_date" type="timestamp"></column>
             <column name="accrued" type="DECIMAL"></column>

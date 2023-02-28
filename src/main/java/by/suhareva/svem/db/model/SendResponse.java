@@ -1,5 +1,6 @@
 package by.suhareva.svem.db.model;
 
+import by.suhareva.svem.enums.ClientType;
 import by.suhareva.svem.enums.StatusInBase;
 import lombok.*;
 
@@ -23,6 +24,7 @@ public class SendResponse {
     @NotEmpty
     @Pattern(regexp = "[0-9]{2}[A-z,0-9]{2}[0-9]{6}|[0-9]{10}")
     private String number;
+    private ClientType type;
     private Integer resolution_num;
     private Date resolution_date;
     private BigDecimal accrued;
