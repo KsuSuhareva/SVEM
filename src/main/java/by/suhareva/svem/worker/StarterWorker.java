@@ -23,11 +23,6 @@ public class StarterWorker {
     public void start() {
         log.info("Worker started");
         executorService.submit(worker);
-        try {
-            executorService.awaitTermination(500, TimeUnit.MILLISECONDS);
-        } catch (InterruptedException e) {
-            log.error(e.getMessage());
-        }
     }
 
     @PreDestroy
