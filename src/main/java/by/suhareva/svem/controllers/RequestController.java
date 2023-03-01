@@ -32,14 +32,14 @@ public class RequestController {
         return new ResponseEntity<>(uuid, HttpStatus.ACCEPTED);
     }
 
-    @PostMapping("getResponse/{id}")
-    public ResponseEntity<SendResponse> getResponse(@PathVariable("id") UUID uuid) throws DAOException {
+    @PostMapping("getResponse/")
+    public ResponseEntity<SendResponse> getResponse(@RequestBody UUID uuid) throws DAOException {
         SendResponse response = responseService.getResponse(uuid);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @PostMapping("delete/{id}")
-    public ResponseEntity<String> deleteResponse(@PathVariable("id") UUID id) throws DAOException {
+    @PostMapping("delete/")
+    public ResponseEntity<String> deleteResponse(@RequestBody UUID id) throws DAOException {
         responseService.deleteResponse(id);
         String message = "Response id=" + id + " deleted";
         return new ResponseEntity<>(message, HttpStatus.OK);
