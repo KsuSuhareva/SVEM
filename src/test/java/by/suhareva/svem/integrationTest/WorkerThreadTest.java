@@ -53,7 +53,7 @@ public class WorkerThreadTest extends IntegrationTest {
         UUID uuid = objectMapper.readValue(
                 mvcResult.getResponse().getContentAsString(),
                 UUID.class);
-        Thread.sleep(100);
+        Thread.sleep(1000);
         SendResponse response = responseRepository.getByUuidRequest(uuid);
         assertEquals(uuid, response.getUuid_request());
         assertEquals(requestExpect.getNumber(), response.getNumber());
