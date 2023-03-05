@@ -15,6 +15,7 @@ public class SQLRequest {
     public static final String UPDATE_RESPONSE_STATUS =
             "UPDATE RESPONSES SET STATUS =? WHERE UUID=?";
     public static final String INSERT_INTO_RESPONSE =
-            "INSERT INTO RESPONSES (UUID ,UUID_REQUEST ,ID_FINE ,NUMBER ,TYPE, RESOLUTION_NUM ,RESOLUTION_DATE ,ACCRUED ,PAID ,DATE ,STATUS ) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+            "INSERT INTO RESPONSES (UUID, UUID_REQUEST, ID_FINE, NUMBER, TYPE, RESOLUTION_NUM, RESOLUTION_DATE, ACCRUED, PAID, DATE, STATUS) " +
+                    "VALUES (?,?,?,?,?,?,?,?,?,?,?)";
     public static final String SELECT_REQUEST_BY_UUID = "SELECT UUID, NUMBER, DATE, STATUS  FROM REQUESTS WHERE UUID =?";
 }
