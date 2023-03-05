@@ -26,11 +26,10 @@ public class ResponseRepositoryJdbcImpl implements ResponseRepository {
     @Override
     public SendResponse save(SendResponse response) throws DAOException {
         try {
-            if (jdbcTemplate.update(SQLRequest.INSERT_INTO_RESPONSE, response.getUuid(), response.getUuid_request(),
-                    response.getId_fine(), response.getNumber(), response.getType().toString(),response.getResolution_num(),
+            jdbcTemplate.update(SQLRequest.INSERT_INTO_RESPONSE, response.getUuid(), response.getUuid_request(),
+                    response.getId_fine(), response.getNumber(), response.getType().toString(), response.getResolution_num(),
                     response.getResolution_date(), response.getAccrued(), response.getPaid(),
-                    response.getDate(), response.getStatus().toString()) == 0)
-                throw new DAOException("Not save response in table responses");
+                    response.getDate(), response.getStatus().toString());
         } catch (DataAccessException e) {
             throw new DAOException(e);
         }

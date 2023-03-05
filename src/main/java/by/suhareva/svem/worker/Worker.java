@@ -31,7 +31,6 @@ public class Worker implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName());
         while (true) {
             try {
                 Optional<GetRequest> optionalRequest = requestRepository.getByMinDate();
@@ -44,7 +43,7 @@ public class Worker implements Runnable {
 
                     requestRepository.delete(request.getUuid());
                 }
-                Thread.sleep(100);
+                Thread.sleep(1000);
             } catch (DAOException e) {
                 log.error("DAOException with cause: {}", e.getMessage());
             } catch (InterruptedException e) {
@@ -84,6 +83,7 @@ public class Worker implements Runnable {
         SendResponse response = SendResponse.builder()
                 .uuid(UUID.randomUUID())
                 .uuid_request(request.getUuid())
+                .type(request.getType())
                 .date(new Date())
                 .status(NEW).build();
         return response;
