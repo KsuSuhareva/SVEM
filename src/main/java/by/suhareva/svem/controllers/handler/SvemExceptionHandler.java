@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.Date;
@@ -15,6 +16,7 @@ import java.util.Date;
 @Slf4j
 public class SvemExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<ErrorMassage> catchMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         log.error("Catch exception  MethodArgumentNotValidException {}", e.getMessage());
         HttpStatus status = HttpStatus.BAD_REQUEST;
@@ -23,6 +25,7 @@ public class SvemExceptionHandler {
     }
 
     @ExceptionHandler(ResponseNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<ErrorMassage> catchResponseNotFoundException(ResponseNotFoundException e) {
         log.error("Catch exception  ResponseNotFoundException with cause: {}", e.getMessage());
         HttpStatus status = HttpStatus.NOT_FOUND;
@@ -31,6 +34,7 @@ public class SvemExceptionHandler {
     }
 
     @ExceptionHandler(DAOException.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseEntity<ErrorMassage> catchDAOException(DAOException e) {
         log.error("Catch exception  DAOException with cause: {}", e.getMessage());
         HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
@@ -39,6 +43,7 @@ public class SvemExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseEntity<ErrorMassage> catchAnyException(Exception e) {
         HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
         ErrorMassage massage = new ErrorMassage(new Date(), status.value(), e.getMessage(),e.getClass().getSimpleName());
