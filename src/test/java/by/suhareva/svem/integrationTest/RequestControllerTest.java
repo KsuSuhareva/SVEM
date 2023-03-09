@@ -2,11 +2,9 @@ package by.suhareva.svem.integrationTest;
 
 import by.suhareva.svem.db.model.GetRequest;
 import by.suhareva.svem.db.model.SendResponse;
-import by.suhareva.svem.repositories.ResponseRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
