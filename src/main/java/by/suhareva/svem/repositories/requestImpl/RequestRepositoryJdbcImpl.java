@@ -1,10 +1,7 @@
 package by.suhareva.svem.repositories.requestImpl;
 
 import by.suhareva.svem.db.constants.SQLRequest;
-import by.suhareva.svem.db.model.Fine;
 import by.suhareva.svem.db.model.GetRequest;
-import by.suhareva.svem.enums.ClientType;
-import by.suhareva.svem.enums.StatusInBase;
 import by.suhareva.svem.exceptions.DAOException;
 import by.suhareva.svem.repositories.RequestRepository;
 import lombok.RequiredArgsConstructor;
@@ -53,7 +50,7 @@ public class RequestRepositoryJdbcImpl implements RequestRepository {
     @Override
     public void delete(UUID uuid) throws DAOException {
         try {
-            if(jdbcTemplate.update(SQLRequest.UPDATE_REQUEST_STATUS, DELETE.toString(), uuid)==0)
+            if (jdbcTemplate.update(SQLRequest.UPDATE_REQUEST_STATUS, DELETE.toString(), uuid) == 0)
                 throw new DAOException("Not delete request in table requests");
         } catch (DataAccessException e) {
             throw new DAOException(e);

@@ -1,8 +1,6 @@
 package by.suhareva.svem.controllers;
 
 import by.suhareva.svem.db.model.GetRequest;
-
-
 import by.suhareva.svem.db.model.SendResponse;
 import by.suhareva.svem.exceptions.DAOException;
 import by.suhareva.svem.service.RequestService;
@@ -11,10 +9,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.util.UUID;
 
 
 @Validated
