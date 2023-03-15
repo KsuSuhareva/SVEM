@@ -6,16 +6,18 @@ import lombok.*;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Getter
 @Setter
 @ToString
+@Builder
+@XmlRootElement(name  = "SendResponse")
 public class SendResponse {
 
     private UUID uuid;
