@@ -21,14 +21,14 @@ public class RequestServiceImpl implements RequestService {
     private final RequestRepository requestRepository;
 
     @Override
-    public UUID save(GetRequest request) throws DAOException {
+    public GetRequest save(GetRequest request) throws DAOException {
         request.setUuid(UUID.randomUUID());
         request.setDate(new Date());
         request.setStatus(NEW);
         request = requestRepository.save(request);
 
         log.info("Request saved with uuid={}", request.getUuid());
-        return request.getUuid();
+        return request;
     }
 
 }

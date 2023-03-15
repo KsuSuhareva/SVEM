@@ -26,22 +26,22 @@ public class RequestController {
     private final RequestService requestService;
     private final ResponseService responseService;
 
-    @PostMapping("save/")
-    public ResponseEntity<UUID> save(@Valid  @RequestBody GetRequest request) throws DAOException {
-        UUID uuid = requestService.save(request);
-        return new ResponseEntity<>(uuid, HttpStatus.ACCEPTED);
+    @PostMapping("save")
+    public ResponseEntity<GetRequest> save(@Valid  @RequestBody GetRequest request) throws DAOException {
+        GetRequest getRequest = requestService.save(request);
+        return new ResponseEntity<>(getRequest, HttpStatus.ACCEPTED);
     }
 
-    @PostMapping("getResponse/")
-    public ResponseEntity<SendResponse> getResponse(@RequestBody UUID uuid) throws DAOException {
-        SendResponse response = responseService.getResponse(uuid);
+    @PostMapping("getResponse")
+    public ResponseEntity<SendResponse> getResponse(@RequestBody GetRequest request) throws DAOException {
+        SendResponse response = responseService.getResponse(request.getUuid());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @PostMapping("delete/")
-    public ResponseEntity<String> deleteResponse(@RequestBody UUID id) throws DAOException {
-        responseService.deleteResponse(id);
-        String message = "Response id=" + id + " deleted";
+    @PostMapping("delete")
+    public ResponseEntity<String> deleteResponse(@RequestBody SendResponse response) throws DAOException {
+        responseService.deleteResponse(response.getUuid());
+        String message = "Response id=" + response.getUuid() + " deleted";
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 

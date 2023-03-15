@@ -29,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
-public class RequestControllerTest extends IntegrationTest {
+public class RequestControllerJsonTest extends IntegrationTest {
     @Autowired
     private MockMvc mockMvc;
     @Autowired
@@ -41,26 +41,26 @@ public class RequestControllerTest extends IntegrationTest {
     @Sql(statements = CLEAN_REQUEST, executionPhase = AFTER_TEST_METHOD)
     @Sql(statements = CLEAN_RESPONSES, executionPhase = AFTER_TEST_METHOD)
     public void saveValidRequestTestShouldReturnId() throws Exception {
-        GetRequest getRequest = new GetRequest(null, "12AA123456", INDIVIDUAL, new Date(), NEW);
-        MvcResult mvcResult = mockMvc.perform(post("/request/save/")
+        GetRequest requestExcept = new GetRequest(null, "12AA123456", INDIVIDUAL, new Date(), NEW);
+        MvcResult mvcResult = mockMvc.perform(post("/request/save")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(getRequest)))
+                        .content(objectMapper.writeValueAsString(requestExcept)))
                 .andExpect(status().is(HttpStatus.ACCEPTED.value()))
                 .andDo(print())
                 .andReturn();
-        UUID id = objectMapper.readValue(
+        GetRequest requestActual = objectMapper.readValue(
                 mvcResult.getResponse().getContentAsString(),
-                UUID.class);
+                GetRequest.class);
         RowMapper<GetRequest> rowMapper = new BeanPropertyRowMapper<>(GetRequest.class);
-        GetRequest request = jdbcTemplate.query(SELECT_REQUEST_BY_ID, rowMapper, id).get(0);
-        assertEquals(id, request.getUuid());
+        GetRequest request = jdbcTemplate.query(SELECT_REQUEST_BY_ID, rowMapper, requestActual.getUuid()).get(0);
+        assertEquals(requestActual.getUuid(), request.getUuid());
     }
 
     @Test()
     public void saveInvalidRequestShouldReturnCauseException() throws Exception {
         UUID uuid = UUID.randomUUID();
         GetRequest request = new GetRequest(uuid, "12AA1234566", INDIVIDUAL, new Date(), NEW);
-        mockMvc.perform(post("/request/save/")
+        mockMvc.perform(post("/request/save")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(request)))
                 .andExpect(status().is(HttpStatus.BAD_REQUEST.value()))
@@ -74,9 +74,11 @@ public class RequestControllerTest extends IntegrationTest {
     @Sql(statements = CLEAN_RESPONSES, executionPhase = AFTER_TEST_METHOD)
     public void getResponseByIdRequest() throws Exception {
         UUID uuidRequest = UUID.fromString("f36cfbe4-98ca-4de5-8388-fad16d6796ba");
-        MvcResult mvcResult = mockMvc.perform(post("/request/getResponse/", uuidRequest)
+        GetRequest request = new GetRequest();
+        request.setUuid(uuidRequest);
+        MvcResult mvcResult = mockMvc.perform(post("/request/getResponse")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(uuidRequest)))
+                        .content(objectMapper.writeValueAsString(request)))
                 .andExpect(status().is(HttpStatus.OK.value()))
                 .andDo(print())
                 .andReturn();
@@ -93,9 +95,11 @@ public class RequestControllerTest extends IntegrationTest {
     @Sql(statements = CLEAN_RESPONSES, executionPhase = AFTER_TEST_METHOD)
     public void deleteResponseShouldReturnMessage() throws Exception {
         UUID uuid = UUID.fromString("f36cfbe4-98ca-4de5-8388-fad16d6796ba");
-        mockMvc.perform(post("/request/delete/")
+        SendResponse sendResponse = new SendResponse();
+        sendResponse.setUuid(uuid);
+        mockMvc.perform(post("/request/delete")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(uuid)))
+                        .content(objectMapper.writeValueAsString(sendResponse)))
                 .andExpect(status().is(HttpStatus.OK.value()))
                 .andExpect(jsonPath("$").value("Response id=" + uuid + " deleted"))
                 .andDo(print())
