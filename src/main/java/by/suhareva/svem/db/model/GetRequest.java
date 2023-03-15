@@ -6,6 +6,7 @@ import lombok.*;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 import java.util.UUID;
 
@@ -15,6 +16,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
+@XmlRootElement(name  = "GetRequest")
 public class GetRequest {
 
     private UUID uuid;
