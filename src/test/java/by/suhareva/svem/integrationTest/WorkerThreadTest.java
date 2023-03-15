@@ -50,18 +50,18 @@ public class WorkerThreadTest extends IntegrationTest {
                 .andExpect(status().is(HttpStatus.ACCEPTED.value()))
                 .andDo(print())
                 .andReturn();
-        UUID uuid = objectMapper.readValue(
+        GetRequest requestSave = objectMapper.readValue(
                 mvcResult.getResponse().getContentAsString(),
-                UUID.class);
+                GetRequest.class);
         Thread.sleep(1000);
-        SendResponse response = responseRepository.getByUuidRequest(uuid);
-        assertEquals(uuid, response.getUuid_request());
+        SendResponse response = responseRepository.getByUuidRequest(requestSave.getUuid());
+        assertEquals(requestSave.getUuid(), response.getUuid_request());
         assertEquals(requestExpect.getNumber(), response.getNumber());
         assertEquals(requestExpect.getStatus(), response.getStatus());
 
-        GetRequest requestActual = jdbcTemplate.query(SELECT_REQUEST_BY_ID, rowMapper, uuid).get(0);
+        GetRequest requestActual = jdbcTemplate.query(SELECT_REQUEST_BY_ID, rowMapper, requestSave.getUuid()).get(0);
         assertEquals(DELETE, requestActual.getStatus());
         assertEquals(requestExpect.getNumber(), requestActual.getNumber());
-        assertEquals(uuid, requestActual.getUuid());
+        assertEquals(requestSave.getUuid(), requestActual.getUuid());
     }
 }
